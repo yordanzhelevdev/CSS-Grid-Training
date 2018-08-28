@@ -1,0 +1,22 @@
+{
+  "name": "grid-training",
+  "version": "1.0.0",
+  "description": "A site clone with grid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yordanzhelevdev/CSS-Grid-Training.git"
+  },
+  "author": "Yordan Zhelev <yordanzhelevdev@gmail.com> (https://yordanzhelevdev.github.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yordanzhelevdev/CSS-Grid-Training/issues"
+  },
+  "homepage": "https://github.com/yordanzhelevdev/CSS-Grid-Training#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
