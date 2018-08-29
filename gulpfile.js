@@ -1,7 +1,6 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 
-
 /* 
 	-- TOP LEVEL FUNCTIONS --
 	gulp.task - Define tasks
@@ -9,7 +8,6 @@ const browserSync = require('browser-sync').create();
 	gulp.dest - Pooints to folder to outpu
 	gulp.watch - Watch files and folders for changes
 */
-
 
 gulp.task('browser-sync', () => {
 	browserSync.init({
