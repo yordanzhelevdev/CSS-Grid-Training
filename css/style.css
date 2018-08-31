@@ -229,7 +229,7 @@ h6 {
 /* Services */
 .services {
   display: grid;
-  background: url('../images/services_background.jpeg');
+  background: url("../images/services_background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   color: rgb(253, 240, 221);
@@ -245,10 +245,9 @@ h6 {
 .footer {
   display: grid;
   justify-items: center;
-  color:rgb(209, 215, 216);
-  background-color: rgb(74, 85, 86);;
+  color: rgb(209, 215, 216);
+  background-color: rgb(74, 85, 86);
   box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 24px -2px inset;
-
 }
 
 .footer__container {
