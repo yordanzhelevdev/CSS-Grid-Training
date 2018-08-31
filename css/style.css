@@ -1,5 +1,5 @@
 :root {
-  --red: #be3e2b;
+  --reddish: #be3e2bcc;
 }
 
 *,
@@ -22,7 +22,7 @@ a {
 
 .page {
   display: grid;
-  grid-template-rows: auto 400px;
+  grid-template-rows: auto minmax(100px, 550px);
 }
 
 .header {
@@ -37,7 +37,7 @@ a {
   grid-template-columns: 1fr;
   grid-auto-flow: column;
   align-items: center;
-  background-color: var(--red);
+  background-color: var(--reddish);
   font-size: 0.9rem;
 }
 
@@ -97,7 +97,7 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-flow: column;
-  background-color: #be3e2bcc;
+  background-color: #be3e2b;
   align-items: center;
 }
 
@@ -123,12 +123,41 @@ a {
 .intro {
   position: relative;
   overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
 }
 
-.intro__bkgvideo {
+.intro__video {
   position: absolute;
   z-index: -100;
   width: 100%;
   height: auto;
-  top: -215px;
+}
+
+.intro__text {
+  grid-column: 2 / span 1 ;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.intro__logo {
+  margin: 0;
+}
+
+.intro__logo img {
+  width: 80px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.intro__btn {
+  background-color: #be3e2b;
+  color: white;
+  padding: 12px 15px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
