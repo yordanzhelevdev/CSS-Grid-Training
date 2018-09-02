@@ -6,7 +6,7 @@
 	<meta charset="utf-8" />
 	<title>Grid Site Clone</title>
 	<link rel="stylesheet" href="css/style.css" />
-	<script src="js/func.js"></script>
+	<script src="js/func.js" defer="defer"></script>
 </head>
 
 <body class="page">
@@ -36,9 +36,21 @@
 		<nav class="navigation">
 			<img src="./images/icons/icon.png" alt="Site logo" />
 			<ul class="navigation__list">
+				<li class="mobile-toggle">
+					<div class="mobile-toggle__bar1"></div>
+					<div class="mobile-toggle__bar2"></div>
+					<div class="mobile-toggle__bar3"></div>
+				</li>
 				<li class="navigation__item"><a href="#">Work</a></li>
 				<li class="navigation__item"><a href="#">Service</a></li>
 				<li class="navigation__item"><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<nav class="mobile-navigation">
+			<ul>
+				<li class="mobile-navigation__item"><a href="#">Work</a></li>
+				<li class="mobile-navigation__item"><a href="#">Service</a></li>
+				<li class="mobile-navigation__item"><a href="#">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
