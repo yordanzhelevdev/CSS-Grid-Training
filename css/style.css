@@ -23,9 +23,13 @@ ul {
   list-style-type: none;
 }
 
+p,
+li {
+  font-size: 1.4rem;
+}
+
 p {
   margin: 0;
-  font-size: 1.4rem;
 }
 
 a {
@@ -51,7 +55,7 @@ h6 {
 .page > *:not(header) {
   padding: 20px;
   /* grid-template-columns: repeat(4, 1fr); */
-  grid-template-columns: 2fr 6fr 2fr;
+  grid-template-columns: 1fr 6fr 1fr;
 }
 
 /* Top Social Icons */
@@ -90,7 +94,7 @@ h6 {
 }
 
 .social-icon--big {
-  height: 20px;
+  height: 21px;
   width: 20px;
   background-size: 20px;
 }
@@ -169,13 +173,15 @@ h6 {
 }
 
 .change .mobile-toggle__bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
 }
-.change .mobile-toggle__bar2 {opacity: 0;}
+.change .mobile-toggle__bar2 {
+  opacity: 0;
+}
 .change .mobile-toggle__bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .navigation__item {
@@ -282,7 +288,7 @@ h6 {
 }
 
 .services__container {
-  grid-column: 2 / span 1;
+  grid-column: 2;
   display: grid;
   grid-gap: 20px;
   justify-items: start;
@@ -296,10 +302,16 @@ h6 {
 }
 
 .footer__container {
-  grid-column: 2 / span 2;
+  grid-column: 2;
   display: grid;
   justify-items: center;
+  text-align: center;
   grid-gap: 15px;
+}
+
+.footer__list li {
+  display: inline-block;
+  margin-right: 10px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -311,5 +323,31 @@ h6 {
   }
   .navigation__item {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .featured-work__section {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__list li {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .page > :not(header) {
+    grid-template-columns: 1fr;
+  }
+  .intro__text {
+    font-size: 1.4rem;
+  }
+
+  .featured-work__text,
+  .intro__text,
+  .services__container {
+    justify-items: stretch;
   }
 }
